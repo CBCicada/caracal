@@ -4,10 +4,10 @@ members = [ "caracal",  "caracal-ebpf","caracal-common"]
 default-members = ["caracal"]
 
 [workspace.dependencies]
-aya = { git = "https://github.com/aya-rs/aya.git", branch = "main" }
-aya-ebpf ={ git = "https://github.com/aya-rs/aya.git", branch = "main" }
-aya-log = { git = "https://github.com/aya-rs/aya.git", branch = "main" }
-aya-log-ebpf = { git = "https://github.com/aya-rs/aya.git", branch = "main" }
+aya = { git = "https://github.com/aya-rs/aya.git", rev = "bd0424ca61a1c9ccd6e15e5a846c2915d067a7ea" }
+aya-ebpf ={ git = "https://github.com/aya-rs/aya.git", rev = "bd0424ca61a1c9ccd6e15e5a846c2915d067a7ea" }
+aya-log = { git = "https://github.com/aya-rs/aya.git", rev = "bd0424ca61a1c9ccd6e15e5a846c2915d067a7ea" }
+aya-log-ebpf = { git = "https://github.com/aya-rs/aya.git", rev = "bd0424ca61a1c9ccd6e15e5a846c2915d067a7ea" }
 anyhow = { version = "1", default-features = false }
 cargo_metadata = { version = "0.18.0", default-features = false }
 clap = { version = "4.5.20", default-features = false, features = ["std"] }
@@ -22,4 +22,3 @@ panic = "abort"
 
 [profile.release]
 panic = "abort"
-
